@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zzzzzzzzzzzzz</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script type="text/javascript" src=".\resources\mayorMenorNormal.js"></script>
+</head>
+<body class="bg-light">
+	<div class="container-fluid bg-dark m-2 px-2 rounded " style=" width: 15vw;">		
+			<p class="text-white my-2 mx-1 py-2" >El numero actual es :</p>
+			<p class="text-success my-2 mx-1 bg-light p-2 rounded" id= "numero" style="width: 12vw;"> </p>
+			<script type="text/javascript">
+				document.getElementById("numero").innerHTML = Math.floor(Math.random() * 101);
+			</script>
+			<div class="text-black my-2 mx-1 py-2 rounded px-1" id="textoResultado" style="background-color: white; width: 12vw;"> A ver, adiviná </div>
+			<div class="row d-flex justify-content-center">
+				<button class="mt-2 mb-4 ml-4 mr-2 rounded" id="botonMayor"> Mayor </button>
+				<button class="mt-2 mb-4 mr-1 rounded" id="botonMenor"> Menor </button>
+			</div>				
+	</div>	
+	<script type="text/javascript">
+		document.getElementById("botonMayor").addEventListener("click", seleccionMayor);
+		document.getElementById("botonMenor").addEventListener("click", seleccionMenor);
+	</script>	
+</body>
+</html>
