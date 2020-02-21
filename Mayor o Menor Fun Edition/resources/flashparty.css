@@ -1,0 +1,53 @@
+#cuerpo{
+	background: "#ff00ff";
+}
+
+.contenedor{
+	top: 10vh;
+}
+
+#cuerpo:hover{	
+	animation-name: flash;
+	animation-duration: 0.5s;
+	animation-iteration-count: 600;
+}
+
+.botoncito:hover{
+	animation-name: flash;
+	animation-duration: 0.5s;
+	animation-iteration-count: 600;
+}
+
+.contenedor:hover{
+	animation-name: flash;
+	animation-duration: 0.9s;
+	animation-iteration-count: 600;
+}
+
+
+
+@keyframes flash{
+	0%   {background-color:red; left:0px; top:10vh;}
+ 	5%  {background-color:yellow; left:15px; top:10vh;}
+ 	10%  {background-color:blue; left:15px; top:12vh;}
+ 	15%  {background-color:green; left:0px; top:15vh;}
+ 	20% {background-color:pink; left:0px; top:10vh;}
+ 	25%   {background-color:cyan; left:0px; top:10vh;}
+ 	30%  {background-color:orange; left:10px; top:10vh;}
+ 	35%  {background-color:lightgreen; left:10px; top:10vh;}
+ 	40%  {background-color:green; left:0px; top:10vh;}
+ 	45% {background-color:pink; left:0px; top:10vh;}
+ 	50%   {background-color:red; left:0px; top:10vh;}
+ 	55%  {background-color:yellow; left:10px; top:10vh;}
+ 	60%  {background-color:blue; left:10px; top:10vh;}
+ 	65%  {background-color:green; left:0px; top:10vh;}
+ 	70% {background-color:red; left:0px; top:10vh;}
+ 	75%   {background-color:pink; left:0px; top:10vh;}
+ 	80%  {background-color:cyan; left:20px; top:10vh;}
+ 	85%  {background-color:orange; left:20px; top:17vh;}
+ 	90%  {background-color:lightgreen; left:0px; top:17vh;}
+ 	95% {background-color:red; left:0px; top:10vh;}
+ 	100% {background-color:yellow; left:0px; top:10vh;}
+}
+
+

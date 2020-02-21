@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PARTYHARD!</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script type="text/javascript" src=".\resources\mayorMenorPH.js"></script>
+	<link rel="stylesheet" type="text/css" href=".\resources\flashparty.css">
+</head>
+<body id="cuerpo" class="d-flex" style="background-color: #ff00ff; width: 100vw">
+	<audio id="musica" autoplay loop>
+    	<source src=".\resources\darude.mp3" type="audio/mp3">
+	</audio>	
+	<div class="row d-flex justify-content-around w-100">
+		<img src=".\resources\dancingjesus.gif" class="dj col-md-4">
+		<div class="container-fluid contenedor h-50 col-md-4">
+			<div class="contenedor container-fluid bg-dark px-2 rounded h-25 my-4  d-flex justify-content-around align-items-center">	
+					<p class="contenedor text-white my-2 mx-1 py-2" >El numero actual es :</p>
+					<p class="contenedor text-success my-2 mx-1 bg-light p-2 rounded" id= "numero" style="width: 12vw; height: 12vh;"> </p>
+					<script type="text/javascript">
+						document.getElementById("numero").innerHTML = Math.floor(Math.random() * 101);
+					</script>
+					<div class="contenedor text-black my-2 mx-1 py-2 rounded px-1" id="textoResultado" style="background-color: white; width: 12vw; height: 12vh;"> A ver, adiviná </div>
+					<div class="row d-flex align-content-start">
+						<button class="botoncito mt-2 mb-2 ml-4 mr-2 rounded" id="botonMayor" style="height: 5vh";> Mayor </button>
+						<button class="botoncito mb-2 ml-4 mr-1 rounded" id="botonMenor" style="height: 5vh";> Menor </button>
+					</div>				
+			</div>			
+			<img src=".\resources\PHIMG.png" class="mt-0" style="width: 33vw;">
+		</div>		
+		<img src=".\resources\dancingjesus.gif" class="dj col-md-4" style="visibility: 0%;">		
+	</div>		
+	<script type="text/javascript">
+		document.getElementById("botonMayor").addEventListener("click", seleccionMayor);
+		document.getElementById("botonMenor").addEventListener("click", seleccionMenor);
+		
+	</script>	
+</body>
+</html>
